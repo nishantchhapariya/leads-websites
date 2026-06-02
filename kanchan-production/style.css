@@ -22,6 +22,17 @@
   --font-logo: 'Tenor Sans', sans-serif;
   --transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   --border-radius: 4px;
+
+  /* Typographic Scale: Hybrid Fluid Major Third (1.15 Ratio Mobile -> 1.25 Ratio Desktop) */
+  --fs-small: clamp(0.815rem, 0.777rem + 0.164vw, 0.900rem); /* 13.0px -> 14.4px */
+  --fs-base: clamp(0.938rem, 0.852rem + 0.364vw, 1.125rem);  /* 15.0px -> 18.0px */
+  --fs-h6: clamp(1.078rem, 0.929rem + 0.636vw, 1.406rem);    /* 17.2px -> 22.5px */
+  --fs-h5: clamp(1.240rem, 1.004rem + 1.005vw, 1.758rem);    /* 19.8px -> 28.1px */
+  --fs-h4: clamp(1.426rem, 1.075rem + 1.496vw, 2.197rem);    /* 22.8px -> 35.2px */
+  --fs-h3: clamp(1.640rem, 1.137rem + 2.147vw, 2.747rem);    /* 26.2px -> 43.9px */
+  --fs-h2: clamp(1.886rem, 1.182rem + 3.001vw, 3.433rem);    /* 30.2px -> 54.9px */
+  --fs-h1: clamp(2.168rem, 1.203rem + 4.117vw, 4.292rem);    /* 34.7px -> 68.7px */
+  --fs-hero: clamp(2.494rem, 1.189rem + 5.567vw, 5.364rem);  /* 39.9px -> 85.8px */
 }
 
 /* Reset and Base Styles */
@@ -33,7 +44,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 18px; /* Slightly larger base font size for Cormorant Garamond */
+  font-size: 100%; /* Resets base to browser default so rem matches our computed sizes */
   background-color: var(--bg);
   color: var(--text);
   font-family: var(--font-serif); /* Cormorant Garamond is the default text font */
@@ -41,6 +52,7 @@ html {
 }
 
 body {
+  font-size: var(--fs-base);
   line-height: 1.75;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -109,7 +121,7 @@ img {
 
 .section-title {
   font-family: var(--font-logo); /* Tenor Sans */
-  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-size: var(--fs-h2);
   line-height: 1.2;
   margin-bottom: 1.2rem;
   font-weight: 500;
@@ -392,7 +404,7 @@ section {
 
 .hero-content .main-title {
   font-family: var(--font-logo); /* Tenor Sans */
-  font-size: clamp(2.8rem, 5.5vw, 4.5rem);
+  font-size: var(--fs-hero);
   line-height: 1.15;
   margin-bottom: 1.5rem;
   font-weight: 500;
@@ -400,7 +412,7 @@ section {
 }
 
 .hero-desc {
-  font-size: 1.1rem;
+  font-size: var(--fs-h6);
   color: var(--text-muted);
   margin-bottom: 2.5rem;
   max-width: 540px;
@@ -493,7 +505,7 @@ section {
 
 .stat-item .stat-num {
   font-family: var(--font-serif);
-  font-size: 3.5rem;
+  font-size: var(--fs-h1);
   font-weight: 500;
   color: var(--accent);
   line-height: 1.1;
@@ -536,7 +548,7 @@ section {
 }
 
 .about-content-card .p-lead {
-  font-size: 1.2rem;
+  font-size: var(--fs-h6);
   color: var(--text);
   line-height: 1.7;
   font-family: var(--font-serif);
@@ -662,7 +674,7 @@ section {
 
 .service-grid-card h3 {
   font-family: var(--font-serif);
-  font-size: 1.45rem;
+  font-size: var(--fs-h5);
   font-weight: 500;
   margin-bottom: 0.8rem;
   color: var(--text);
@@ -882,7 +894,7 @@ section {
 
 .portfolio-details h4 {
   font-family: var(--font-serif);
-  font-size: 1.35rem;
+  font-size: var(--fs-h5);
   font-weight: 500;
   color: var(--text);
 }
@@ -943,7 +955,7 @@ section {
 }
 
 .testimonial-item-card p {
-  font-size: 1.02rem;
+  font-size: var(--fs-base);
   line-height: 1.65;
   color: var(--text);
   font-style: italic;
@@ -1229,7 +1241,7 @@ section {
 .footer-nav h4,
 .footer-map-col h4 {
   font-family: var(--font-sans);
-  font-size: 0.85rem;
+  font-size: var(--fs-small);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -1454,16 +1466,7 @@ section {
     padding: 4.5rem 0;
   }
   
-  .section-title {
-    font-size: clamp(1.8rem, 6vw, 2.4rem);
-  }
-  
-  .hero-content .main-title {
-    font-size: clamp(2rem, 7.5vw, 2.8rem); /* Scale down title size for mobile */
-  }
-
   .about-content-card .p-lead {
-    font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
   }
