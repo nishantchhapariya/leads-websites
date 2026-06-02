@@ -74,15 +74,15 @@ img {
 }
 
 .grid-2 {
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
 }
 
 .grid-3 {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
 }
 
 .grid-4 {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
 }
 
 .text-center {
@@ -630,7 +630,7 @@ section {
 
 .services-grid-4 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
   gap: 2rem;
 }
 
@@ -839,7 +839,7 @@ section {
 
 .portfolio-grid-masonry {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr));
   gap: 2.5rem;
 }
 
@@ -1312,7 +1312,8 @@ section {
 }
 
 /* Scroll Animation Timeline (Native support) */
-@media (prefers-reduced-motion: no-preference) {
+/* Scroll Animation Timeline (Native support - Desktop only) */
+@media (min-width: 993px) and (prefers-reduced-motion: no-preference) {
   @supports ((animation-timeline: view()) and (animation-range: entry)) {
     @keyframes fade-rise {
       from {
@@ -1401,7 +1402,7 @@ section {
   .nav-menu {
     position: fixed;
     top: 0;
-    right: -300px; /* Safe bounds instead of -100% to prevent horizontal scroll wobbling */
+    right: 0;
     width: 280px;
     height: 100vh;
     background-color: var(--bg-sec);
@@ -1409,10 +1410,13 @@ section {
     padding: 7rem 2.5rem 2rem;
     transition: var(--transition);
     z-index: 1050;
+    transform: translateX(100%);
+    visibility: hidden;
   }
   
   .nav-menu.active {
-    right: 0;
+    transform: translateX(0);
+    visibility: visible;
   }
   
   .nav-menu ul {
@@ -1450,8 +1454,18 @@ section {
     padding: 4.5rem 0;
   }
   
+  .section-title {
+    font-size: clamp(1.8rem, 6vw, 2.4rem);
+  }
+  
   .hero-content .main-title {
     font-size: clamp(2rem, 7.5vw, 2.8rem); /* Scale down title size for mobile */
+  }
+
+  .about-content-card .p-lead {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
   }
 
   .hero-rating-badge {

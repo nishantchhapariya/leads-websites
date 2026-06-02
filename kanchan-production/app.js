@@ -67,7 +67,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 4. Fallback for Scroll-Driven Animations (IntersectionObserver)
-  if (!CSS.supports('(animation-timeline: view()) and (animation-range: entry)')) {
+  const isMobile = window.innerWidth <= 992;
+  const supportsNativeScroll = CSS.supports('(animation-timeline: view()) and (animation-range: entry)');
+  
+  if (!supportsNativeScroll || isMobile) {
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -50px 0px'
