@@ -3,31 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aqple Interior - Minimalist Scandinavian Design | Gwalior</title>
-  <meta name="description" content="Aqple Interior is Gwalior's leading designer for modern, Scandinavian, and minimalist residential spaces. Crafting clean, light-filled, functional interiors.">
+  <title>Aqple Interior — Interior & Architecture Services | Agra</title>
+  <meta name="description" content="Aqple Interior by Kamal Agarwal — premium Interior, Exterior, Residential, Commercial & Civil Work services in Agra, Uttar Pradesh. 4.8★ on Google. Transforming spaces with vision.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header / Navigation -->
+
+  <!-- ===== HEADER ===== -->
   <header id="main-header" class="site-header">
     <div class="container header-container">
       <div class="logo">
-        <a href="#hero">AQPLE <span class="logo-sub">INTERIOR</span></a>
+        <a href="#hero" class="logo-link">
+          <img src="images/logo.png" alt="Aqple Interior Logo" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="logo-text" style="display:none">AQPLE <span class="logo-accent">INTERIOR</span></span>
+        </a>
       </div>
       <nav class="nav-menu" id="nav-menu">
         <ul>
           <li><a href="#hero">Home</a></li>
-          <li><a href="#about">Philosophy</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div class="contact-cta">
-        <a href="tel:+917599151555" class="btn btn-primary btn-sm">Get Quote</a>
+      <div class="header-actions">
+        <a href="tel:+919897045114" class="btn btn-teal btn-sm">Get Quote</a>
       </div>
       <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation">
         <span class="bar"></span>
@@ -37,173 +41,396 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- ===== HERO ===== -->
   <section id="hero" class="hero-section">
     <div class="hero-bg" style="background-image: url('images/hero.png');"></div>
     <div class="hero-overlay"></div>
     <div class="container hero-container">
       <div class="hero-content">
-        <span class="sub-title">Scandinavian Minimalism</span>
-        <h1 class="main-title">Less is <br><span class="bold">Beautiful.</span></h1>
-        <p class="hero-desc">We design functional, light-filled, and uncluttered residential spaces that breathe. Experience Scandinavian simplicity in Gwalior.</p>
-        <div class="hero-buttons">
-          <a href="#portfolio" class="btn btn-primary">Our Projects</a>
-          <a href="#contact" class="btn btn-outline">Start Project</a>
+        <div class="hero-eyebrow">
+          <span class="eyebrow-line"></span>
+          <span class="eyebrow-text">Agra, Uttar Pradesh</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-title-thin">We Design</span>
+          <span class="hero-title-bold">Spaces That<br>Inspire.</span>
+        </h1>
+        <p class="hero-desc">Complete Interior, Exterior, Residential, Commercial &amp; Civil Work services across Agra. Led by <strong>Kamal Agarwal</strong> — crafting environments that elevate everyday living.</p>
+        <div class="hero-cta">
+          <a href="#portfolio" class="btn btn-teal">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Free Consultation</a>
         </div>
       </div>
-      <div class="hero-badge">
-        <span class="badge-num">4.5★</span>
-        <span class="badge-lbl">Google Rated</span>
+      <div class="hero-side">
+        <a href="https://www.instagram.com/aqple_interior/" target="_blank" rel="noopener noreferrer" class="hero-stat-card">
+          <span class="stat-num">932</span>
+          <span class="stat-label">Instagram Followers</span>
+        </a>
+        <a href="https://www.google.com/maps/place/Aqple+Interiors+%7C+Best+Interior+Designer+In+Agra/@27.204723,78.0059291,17z/data=!3m1!4b1!4m6!3m5!1s0x397477444d16a10f:0x2accfabdbf446253!8m2!3d27.204723!4d78.008504!16s%2Fg%2F1hm483v5r?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="hero-stat-card">
+          <span class="stat-num">4.8<span class="stat-star">★</span></span>
+          <span class="stat-label">Google Rated</span>
+        </a>
+      </div>
+    </div>
+    <!-- Scrolling ticker -->
+    <div class="hero-ticker">
+      <div class="ticker-track">
+        <span>Interior Design</span><span class="ticker-dot">◆</span>
+        <span>Exterior &amp; Architecture</span><span class="ticker-dot">◆</span>
+        <span>Residential</span><span class="ticker-dot">◆</span>
+        <span>Commercial</span><span class="ticker-dot">◆</span>
+        <span>Civil Work</span><span class="ticker-dot">◆</span>
+        <span>Agra, UP</span><span class="ticker-dot">◆</span>
+        <span>Interior Design</span><span class="ticker-dot">◆</span>
+        <span>Exterior &amp; Architecture</span><span class="ticker-dot">◆</span>
+        <span>Residential</span><span class="ticker-dot">◆</span>
+        <span>Commercial</span><span class="ticker-dot">◆</span>
+        <span>Civil Work</span><span class="ticker-dot">◆</span>
+        <span>Agra, UP</span><span class="ticker-dot">◆</span>
       </div>
     </div>
   </section>
 
-  <!-- Philosophy Section -->
+  <!-- ===== STATS STRIP ===== -->
+  <section class="stats-strip">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <span class="stat-big" data-target="500">0</span><span class="stat-suffix">+</span>
+        <span class="stat-desc">Projects Delivered</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-big" data-target="20">0</span><span class="stat-suffix">+</span>
+        <span class="stat-desc">Years of Experience</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-big">4.8</span><span class="stat-suffix">★</span>
+        <span class="stat-desc">Google Rating</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-big" data-target="5">0</span><span class="stat-suffix"></span>
+        <span class="stat-desc">Services Offered</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
   <section id="about" class="about-section">
-    <div class="container">
-      <div class="grid grid-2">
-        <div class="about-content">
-          <span class="section-tag">Our Philosophy</span>
-          <h2 class="section-title">Functional Simplicity. Curation. Light.</h2>
-          <p class="p-highlight">We remove the unnecessary to make room for what truly matters: space, natural light, and structural function.</p>
-          <p>Aqple Interior is a minimalist design studio located in Jivaji Ganj, Gwalior. Inspired by Nordic and Scandinavian design aesthetics, we specialize in high-contrast spaces featuring crisp lines, light-colored wood floorings, clean white structures, and custom black metal fixtures.</p>
-          <p>We work closely with home builders and apartment owners across Gwalior who want to transform cluttered environments into spacious, calming sanctuaries. Every layout is mathematically planned for space efficiency and visual balance.</p>
+    <div class="about-inner">
+      <div class="about-content">
+        <span class="section-eyebrow">About Aqple Interior</span>
+        <h2 class="section-title">Vision.<br>Precision.<br>Craftsmanship.</h2>
+        <p class="about-lead">We believe every space tells a story — and our job is to make that story extraordinary, from blueprint to final finish.</p>
+        <p class="about-body">Aqple Interior, led by <strong>Kamal Agarwal</strong>, is a full-service Interior &amp; Architecture firm based in Agra, Uttar Pradesh. We deliver end-to-end solutions covering Interior Design, Exterior Facades, Residential Homes, Commercial Spaces, and Civil Construction Work.</p>
+        <p class="about-body">With a keen eye for detail and a commitment to quality materials, we transform ordinary spaces into refined environments — from modern kitchens to commercial showrooms.</p>
+        <div class="about-cta-row">
+          <a href="#contact" class="btn btn-teal">Work With Us</a>
+          <a href="https://www.aqple.in/" target="_blank" rel="noopener noreferrer" class="about-website-link">www.aqple.in →</a>
         </div>
-        <div class="about-images">
-          <div class="img-container scroll-animated">
-            <img src="images/bedroom.png" alt="Minimalist Bedroom Project by Aqple Interior">
+      </div>
+      <div class="about-image-panel">
+        <div class="about-img-wrap scroll-animated">
+          <img src="images/bedroom.png" alt="Premium Interior Design by Aqple Interior Agra">
+          <div class="about-img-badge">
+            <span class="badge-title">Kamal Agarwal</span>
+            <span class="badge-sub">Founder &amp; Lead Designer</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
+  <!-- ===== SERVICES ===== -->
   <section id="services" class="services-section">
     <div class="container">
-      <div class="section-header">
-        <div class="flex-header">
-          <div>
-            <span class="section-tag">Services</span>
-            <h2 class="section-title">Minimalist Solutions</h2>
-          </div>
-          <p class="section-subtitle">We focus on modular design, natural layouts, and high-quality materials that require zero clutter to stand out.</p>
+      <div class="services-header">
+        <div>
+          <span class="section-eyebrow light">What We Do</span>
+          <h2 class="section-title light">Complete Design<br>&amp; Build Solutions</h2>
         </div>
+        <p class="services-sub">From concept to completion — tailored to your space, your budget, your vision.</p>
       </div>
-      <div class="grid grid-3">
-        <div class="service-card">
-          <div class="service-num">01</div>
-          <h3>Scandinavian Living Design</h3>
-          <p>Light wood floors, neutral fabrics, custom slim furniture layout, and smart hidden storage systems.</p>
+      <div class="services-grid">
+        <div class="service-card scroll-animated">
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="8" width="32" height="24" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M4 16h32" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M14 16v16" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <span class="service-num">01</span>
+          <h3 class="service-title">Interior Design</h3>
+          <p class="service-desc">Complete home &amp; office interiors — modular kitchens, wardrobes, false ceilings, flooring, lighting design, and curated furnishings.</p>
         </div>
-        <div class="service-card">
-          <div class="service-num">02</div>
-          <h3>Minimal Modular Kitchens</h3>
-          <p>Handle-less cabinets, integrated appliances, quartz countertops, and clean monochrome styling.</p>
+        <div class="service-card scroll-animated">
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 32L20 8l16 24H4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M14 32v-8h12v8" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <span class="service-num">02</span>
+          <h3 class="service-title">Exterior &amp; Architecture</h3>
+          <p class="service-desc">Stunning facade designs, elevation planning, landscape architecture, and exterior material selection for a striking first impression.</p>
         </div>
-        <div class="service-card">
-          <div class="service-num">03</div>
-          <h3>Space Optimization</h3>
-          <p>Converting compact flats or offices into spacious layouts using architectural planning and multifunctional partitions.</p>
+        <div class="service-card scroll-animated">
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="6" width="12" height="12" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="22" y="6" width="12" height="12" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="6" y="22" width="12" height="12" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="22" y="22" width="12" height="12" rx="1" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <span class="service-num">03</span>
+          <h3 class="service-title">Residential &amp; Commercial</h3>
+          <p class="service-desc">Turnkey solutions for homes, villas, apartments, retail showrooms, offices, and commercial establishments across Agra.</p>
+        </div>
+        <div class="service-card scroll-animated">
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 32V18l12-10 12 10v14" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <rect x="15" y="22" width="10" height="10" rx="0.5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M20 22v10" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <span class="service-num">04</span>
+          <h3 class="service-title">Civil Work</h3>
+          <p class="service-desc">End-to-end civil construction — structural planning, RCC work, brickwork, plastering, plumbing, and electrical with quality assurance.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio Section -->
+  <!-- ===== PORTFOLIO ===== -->
   <section id="portfolio" class="portfolio-section">
     <div class="container">
-      <div class="section-header text-center">
-        <span class="section-tag">Works</span>
-        <h2 class="section-title">Featured Portfolios</h2>
+      <div class="section-header-centered">
+        <span class="section-eyebrow">Our Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="portfolio-intro">A selection of spaces we've transformed across Agra.</p>
       </div>
       <div class="portfolio-grid">
         <div class="portfolio-item scroll-animated">
-          <img src="images/hero.png" alt="Scandinavian Living Room Layout">
-          <div class="portfolio-info">
-            <h4>Modernist Living Room</h4>
-            <span>Nai Sadak project</span>
+          <div class="portfolio-img-wrap">
+            <img src="images/hero.png" alt="Contemporary Living Room Interior by Aqple Interior Agra">
+            <div class="portfolio-overlay">
+              <div class="overlay-content">
+                <span class="overlay-tag">Interior Design</span>
+                <h4 class="overlay-title">Contemporary Living Room</h4>
+                <span class="overlay-loc">📍 Nehru Nagar, Agra</span>
+              </div>
+            </div>
           </div>
         </div>
         <div class="portfolio-item scroll-animated">
-          <img src="images/bedroom.png" alt="Minimalist Platform Bedroom">
-          <div class="portfolio-info">
-            <h4>Nordic Platform Bedroom</h4>
-            <span>Jivaji Ganj project</span>
+          <div class="portfolio-img-wrap">
+            <img src="images/bedroom.png" alt="Luxury Bedroom Suite by Aqple Interior Agra">
+            <div class="portfolio-overlay">
+              <div class="overlay-content">
+                <span class="overlay-tag">Residential</span>
+                <h4 class="overlay-title">Luxury Bedroom Suite</h4>
+                <span class="overlay-loc">📍 Shah Market, Agra</span>
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="portfolio-item portfolio-item--wide scroll-animated">
+          <div class="portfolio-img-wrap">
+            <img src="images/hero.png" alt="Commercial Space by Aqple Interior Agra" style="object-position: center 30%">
+            <div class="portfolio-overlay">
+              <div class="overlay-content">
+                <span class="overlay-tag">Commercial</span>
+                <h4 class="overlay-title">Modern Office Fit-Out</h4>
+                <span class="overlay-loc">📍 Civil Lines, Agra</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-cta">
+        <a href="https://www.instagram.com/aqple_interior/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-teal">See More on Instagram →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="process-section">
+    <div class="container">
+      <div class="section-header-centered">
+        <span class="section-eyebrow light">How We Work</span>
+        <h2 class="section-title light">Our Simple Process</h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step scroll-animated">
+          <div class="process-icon">01</div>
+          <div class="process-connector"></div>
+          <h3 class="process-title">Consult</h3>
+          <p class="process-desc">Free site visit and walkthrough. We understand your needs, budget, and vision before anything else.</p>
+        </div>
+        <div class="process-step scroll-animated">
+          <div class="process-icon">02</div>
+          <div class="process-connector"></div>
+          <h3 class="process-title">Design</h3>
+          <p class="process-desc">Detailed layouts, material selection, 3D visualization, and full design documentation presented for your approval.</p>
+        </div>
+        <div class="process-step scroll-animated">
+          <div class="process-icon">03</div>
+          <div class="process-connector"></div>
+          <h3 class="process-title">Execute</h3>
+          <p class="process-desc">Skilled craftsmen, quality materials, project management, and timely delivery. We handle everything end-to-end.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- ===== CONTACT ===== -->
   <section id="contact" class="contact-section">
-    <div class="container">
-      <div class="grid grid-2">
-        <div class="contact-info">
-          <span class="section-tag">Contact</span>
-          <h2 class="section-title">Start Designing</h2>
-          <p>Ready to bring minimalist harmony into your space? Book a free site walkthrough and estimate layout session.</p>
-          
-          <div class="contact-details">
-            <div class="detail-row">
-              <strong>Address</strong>
-              <p>B-39, Nai Sadak, New Shanti Nagar, Jivaji Ganj, Gwalior, Madhya Pradesh 474001</p>
+    <div class="contact-inner">
+      <!-- Left dark panel -->
+      <div class="contact-info-panel">
+        <span class="section-eyebrow light">Get In Touch</span>
+        <h2 class="section-title light">Let's Build<br>Together</h2>
+        <p class="contact-intro">Ready to transform your space? Book a free site visit and consultation with Kamal Agarwal.</p>
+
+        <div class="contact-details">
+          <a href="https://www.google.com/maps/place/Aqple+Interiors+%7C+Best+Interior+Designer+In+Agra/@27.204723,78.0059291,17z/data=!3m1!4b1!4m6!3m5!1s0x397477444d16a10f:0x2accfabdbf446253!8m2!3d27.204723!4d78.008504!16s%2Fg%2F1hm483v5r?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
             </div>
-            <div class="detail-row">
-              <strong>Call Us</strong>
-              <p><a href="tel:+917599151555">+91 75991 51555</a></p>
+            <div>
+              <span class="contact-item-label">Address</span>
+              <span class="contact-item-val">4 Nehru Nagar, Shah Market,<br>Agra, Uttar Pradesh 282002</span>
             </div>
-            <div class="detail-row">
-              <strong>Hours</strong>
-              <p>Mon - Sat: 10:00 AM - 7:00 PM</p>
+          </a>
+          <a href="tel:+919897045114" class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.88 9.29 19.79 19.79 0 01.82 4.67 2 2 0 012.83 2.5h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 10.1a16 16 0 006.29 6.29l.97-.96a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
             </div>
-          </div>
+            <div>
+              <span class="contact-item-label">Call / WhatsApp</span>
+              <span class="contact-item-val">+91 98970 45114<br>+91 93193 65114</span>
+            </div>
+          </a>
+          <a href="mailto:aqple1@gmail.com" class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <span class="contact-item-label">Email</span>
+              <span class="contact-item-val">aqple1@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/aqple_interior/" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </div>
+            <div>
+              <span class="contact-item-label">Instagram</span>
+              <span class="contact-item-val">@aqple_interior</span>
+            </div>
+          </a>
         </div>
-        
-        <div class="contact-form-container">
-          <form id="contact-form" class="contact-form">
-            <h3 class="form-title">Consultation Form</h3>
+      </div>
+
+      <!-- Right form panel -->
+      <div class="contact-form-panel">
+        <form id="contact-form" class="contact-form" novalidate>
+          <h3 class="form-heading">Book a Free Consultation</h3>
+          <div class="form-row">
             <div class="form-group">
               <label for="name">Full Name</label>
-              <input type="text" id="name" required placeholder="Aarav Mehra">
+              <input type="text" id="name" required placeholder="Your Name">
             </div>
             <div class="form-group">
               <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" required placeholder="+91 75991 51555">
+              <input type="tel" id="phone" required placeholder="+91 98970 45114">
             </div>
-            <div class="form-group">
-              <label for="space-type">Space Type</label>
-              <select id="space-type">
-                <option value="apartment">Apartment / Flat</option>
-                <option value="villa">Villa / Independent House</option>
-                <option value="kitchen">Modular Kitchen</option>
-                <option value="office">Office / Commercial</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" rows="3" placeholder="Describe what you want to achieve..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">Submit</button>
-            <div id="form-message" class="form-message"></div>
-          </form>
-        </div>
+          </div>
+          <div class="form-group">
+            <label for="space-type">Service Required</label>
+            <select id="space-type">
+              <option value="interior">Interior Design</option>
+              <option value="exterior">Exterior &amp; Architecture</option>
+              <option value="residential">Residential Project</option>
+              <option value="commercial">Commercial Project</option>
+              <option value="civil">Civil Work</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell Us About Your Project</label>
+            <textarea id="message" rows="4" placeholder="Describe your space, requirements, and budget..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-teal btn-block" id="submit-btn">Send Message</button>
+          <div id="form-message" class="form-message"></div>
+        </form>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
-    <div class="container footer-content">
-      <p>&copy; 2026 Aqple Interior. All rights reserved.</p>
-      <p class="footer-demo-badge">Demo Website created by website development agency</p>
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand-col">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="Aqple Interior" class="footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            <span class="footer-logo-text" style="display:none">AQPLE INTERIOR</span>
+          </div>
+          <p class="footer-tagline">Transforming spaces across Agra with vision, precision, and craftsmanship since 2004.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/aqple_interior/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://www.google.com/maps/place/Aqple+Interiors+%7C+Best+Interior+Designer+In+Agra/@27.204723,78.0059291,17z/data=!3m1!4b1!4m6!3m5!1s0x397477444d16a10f:0x2accfabdbf446253!8m2!3d27.204723!4d78.008504!16s%2Fg%2F1hm483v5r?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Google Maps" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </a>
+            <a href="https://wa.me/919897045114?text=Hello%20Aqple%20Interior%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-icon">
+              <svg viewBox="0 0 448 512" width="20" height="20"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-col-heading">Services</h4>
+          <ul>
+            <li><a href="#services">Interior Design</a></li>
+            <li><a href="#services">Exterior &amp; Architecture</a></li>
+            <li><a href="#services">Residential</a></li>
+            <li><a href="#services">Commercial</a></li>
+            <li><a href="#services">Civil Work</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-col-heading">Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://www.aqple.in/" target="_blank" rel="noopener noreferrer">Website</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4 class="footer-col-heading">Contact</h4>
+          <p>4 Nehru Nagar, Shah Market,<br>Agra, Uttar Pradesh 282002</p>
+          <p><a href="tel:+919897045114">+91 98970 45114</a></p>
+          <p><a href="tel:+919319365114">+91 93193 65114</a></p>
+          <p><a href="mailto:aqple1@gmail.com">aqple1@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Aqple Interior. All rights reserved.</p>
+        <p class="footer-agency">Demo Website by website development agency</p>
+      </div>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/917599151555?text=Hello%20Aqple%20Interior%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20consult%20with%20you%20about%20a%20minimalist%20interior%20design%20project." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="30" height="30"><path fill="#fff" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/919897045114?text=Hello%20Aqple%20Interior%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20discuss%20a%20project%20with%20Kamal%20Agarwal." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28" height="28"><path fill="#fff" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
   </a>
 
   <script src="app.js"></script>
