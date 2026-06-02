@@ -529,7 +529,7 @@ section {
   display: grid;
   grid-template-columns: 0.95fr 1.05fr;
   gap: 5rem;
-  align-items: start; /* align-items: start lets collage grow without stretching */
+  align-items: center;
 }
 
 .about-content-card {
@@ -563,8 +563,9 @@ section {
 .about-images-collage {
   position: relative;
   height: 520px;
-  /* min-width guard prevents collage images from collapsing to near-zero */
-  min-width: 0;
+  /* width: 100% is critical — absolutely-positioned children give no natural width,
+     so without this the element collapses to 0 when align-items is not stretch */
+  width: 100%;
 }
 
 .about-collage-back {
@@ -738,6 +739,8 @@ section {
 .showcase-collage {
   position: relative;
   height: 520px;
+  /* width: 100% is critical — absolutely-positioned children give no natural width */
+  width: 100%;
 }
 
 .showcase-collage-frame-1 {
