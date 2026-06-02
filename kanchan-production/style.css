@@ -1087,12 +1087,12 @@ section {
 
 .form-group label {
   display: block;
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 0.85rem;
+  font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-bottom: 0.6rem;
-  color: var(--text-muted);
+  color: #1A1A1A; /* Solid dark text for maximum contrast */
 }
 
 .form-group input,
@@ -1100,34 +1100,48 @@ section {
 .form-group textarea {
   width: 100%;
   padding: 0.9rem 1.2rem;
-  background-color: var(--bg-card);
-  border: 1px solid var(--border);
+  background-color: #FFFFFF; /* Pure white background for maximum readability */
+  border: 1.5px solid #8C827A; /* Medium-grey high-contrast border boundary */
   border-radius: 4px;
-  color: var(--text);
+  color: #1A1A1A !important; /* Force dark charcoal text */
   font-family: var(--font-sans);
   font-size: 0.95rem;
+  font-weight: 500;
+  color-scheme: light; /* Forces Safari/Chrome to render light dropdowns and scrollbars */
   transition: var(--transition);
+}
+
+/* Custom styling for dropdown arrow to guarantee high contrast */
+.form-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%231A1A1A' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 1.2rem center;
+  background-size: 1.2rem;
+  padding-right: 3rem;
 }
 
 /* Explicit high-contrast placeholder text */
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: var(--text-muted);
-  opacity: 0.75;
+  color: #6E655E !important; /* Highly visible placeholder text */
+  opacity: 1; /* Force solid color opacity */
 }
 
 /* Force light background and dark text for select dropdown options */
 .form-group select option {
-  background-color: var(--bg-sec);
-  color: var(--text);
+  background-color: #FFFFFF !important;
+  color: #1A1A1A !important;
 }
 
 /* Autofill color overrides to prevent browsers from setting low-contrast backgrounds/text */
 .form-group input:-webkit-autofill,
 .form-group textarea:-webkit-autofill,
 .form-group select:-webkit-autofill {
-  -webkit-text-fill-color: var(--text) !important;
-  -webkit-box-shadow: 0 0 0px 1000px var(--bg-card) inset !important;
+  -webkit-text-fill-color: #1A1A1A !important;
+  -webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset !important;
   transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -1136,8 +1150,8 @@ section {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--accent);
-  background-color: var(--bg-sec);
-  box-shadow: 0 0 10px rgba(217, 136, 92, 0.1);
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(217, 136, 92, 0.2);
 }
 
 .form-message {
