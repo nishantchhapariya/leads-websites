@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 3. Portfolio category filtering
   const filterBtns = document.querySelectorAll('.filter-btn');
-  const portfolioItems = document.querySelectorAll('.portfolio-item');
+  const portfolioItems = document.querySelectorAll('.portfolio-card');
 
   if (filterBtns.length && portfolioItems.length) {
     filterBtns.forEach(btn => {

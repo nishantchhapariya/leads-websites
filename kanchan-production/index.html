@@ -6,7 +6,7 @@
   <title>Kanchan Production | Premium Wedding Photographer & Cinematographer in Gwalior</title>
   <meta name="description" content="Capture your special moments with Gwalior's premier photography studio since 1996. Specializing in luxury wedding photography, cinematic pre-wedding shoots, and high-definition wedding films by Manoj Verma. Rating 4.7★ on Google.">
   
-  <!-- Typography (Outfit for geometric body, Playfair Display for cinematic elegant headers) -->
+  <!-- Typography (Outfit for geometric body, Playfair Display & Cormorant Garamond for elegant serif headers) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -30,15 +30,18 @@
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">Our Story</a></li>
-          <li><a href="#portfolio">Gallery</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Gallery</a></li>
           <li><a href="#testimonials">Reviews</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       
       <div class="header-cta">
-        <a href="tel:+917803950222" class="btn btn-primary btn-sm">Call Now</a>
+        <a href="tel:+917803950222" class="btn-pill btn-sm-pill">
+          Book Appointment
+          <span class="btn-arrow">→</span>
+        </a>
       </div>
       
       <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
@@ -51,24 +54,31 @@
 
   <!-- Hero Section -->
   <section id="hero" class="hero-section">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-    <div class="container hero-container">
+    <div class="container hero-grid">
       <div class="hero-content scroll-animated">
         <span class="sub-title">ESTABLISHED 1996 • GWALIOR • BY MANOJ VERMA</span>
-        <h1 class="main-title">Capturing <span class="accent-text">Love</span>,<br>Framing <span class="font-serif italic">Memories</span></h1>
+        <h1 class="main-title">Plan Your <br><span class="accent-text font-italic">Dream Wedding</span> <br>With Us</h1>
         <p class="hero-desc">Luxury wedding photography and cinematic storytelling. Documenting timeless emotions and grand celebrations in Gwalior and across India for over three decades.</p>
         <div class="hero-buttons">
-          <a href="#portfolio" class="btn btn-primary">View Gallery</a>
-          <a href="#contact" class="btn btn-outline">Check Availability</a>
+          <a href="#portfolio" class="btn-pill">
+            Book Appointment
+            <span class="btn-arrow">→</span>
+          </a>
+          <a href="#contact" class="btn-outline">Check Availability</a>
         </div>
       </div>
       
-      <!-- Rating Badge -->
-      <div class="hero-badge scroll-animated">
-        <div class="badge-stars">★★★★★</div>
-        <div class="badge-rating">4.7 <span class="rating-out-of">/ 5</span></div>
-        <p class="badge-text">100+ Reviews on Google</p>
+      <div class="hero-image-wrapper scroll-animated">
+        <div class="hero-img-container img-frame-accent">
+          <img src="images/hero.png" alt="Couple romantic sunset silhouette captured by Kanchan Production">
+        </div>
+        
+        <!-- Rating Badge -->
+        <div class="hero-rating-badge">
+          <div class="stars">★★★★★</div>
+          <div class="score">4.7</div>
+          <div class="label">100+ Google Reviews</div>
+        </div>
       </div>
     </div>
   </section>
@@ -76,50 +86,169 @@
   <!-- Stats Section -->
   <section class="stats-section">
     <div class="container stats-grid">
-      <div class="stat-card scroll-animated">
-        <span class="stat-number">30+</span>
-        <span class="stat-label">Years of Excellence</span>
+      <div class="stat-item scroll-animated">
+        <span class="stat-num">30+</span>
+        <span class="stat-text">Years of Artistry</span>
       </div>
-      <div class="stat-card scroll-animated">
-        <span class="stat-number">1000+</span>
-        <span class="stat-label">Stories Captured</span>
+      <div class="stat-item scroll-animated">
+        <span class="stat-num">1000+</span>
+        <span class="stat-text">Stories Framed</span>
       </div>
-      <div class="stat-card scroll-animated">
-        <span class="stat-number">100%</span>
-        <span class="stat-label">Bespoke Filmmaking</span>
+      <div class="stat-item scroll-animated">
+        <span class="stat-num">100%</span>
+        <span class="stat-text">Bespoke Cinema</span>
       </div>
     </div>
   </section>
 
   <!-- About Section -->
   <section id="about" class="about-section">
+    <div class="container about-grid">
+      <div class="about-content-card scroll-animated">
+        <span class="section-tag">About Our Studio</span>
+        <h2 class="section-title">Three Decades of <br><span class="accent-text font-italic">Visual Artistry</span></h2>
+        <p class="p-lead">Every wedding is an unrepeatable masterpiece. Led by Manoj Verma, our mission is to capture raw emotions, fleeting smiles, and royal celebrations so they remain preserved for generations.</p>
+        <p>Located on Tansen Road in Hazira, Gwalior, Kanchan Production is a professional collective of wedding photographers, cinematographers, and editors. Combining classical portrait techniques with contemporary storytelling, we turn your big day into an heirloom film.</p>
+        <a href="#contact" class="btn-pill">
+          Read More
+          <span class="btn-arrow">→</span>
+        </a>
+      </div>
+      
+      <div class="about-images-collage scroll-animated">
+        <div class="about-collage-back img-frame-accent">
+          <img src="images/pre_wedding.png" alt="Pre-wedding shoot near Gwalior Fort architecture">
+        </div>
+        <div class="about-collage-front">
+          <img src="images/portrait.png" alt="Creative studio portrait capture by Manoj Verma">
+        </div>
+        
+        <!-- Slider Page Indicator dots matching inspiration layout -->
+        <div class="about-collage-indicators">
+          <span></span>
+          <span class="active"></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section-white">
     <div class="container">
-      <div class="grid grid-2">
-        <div class="about-images scroll-animated">
-          <div class="img-frame-lg">
-            <img src="images/pre_wedding.png" alt="Couple portrait near royal architecture designed by Kanchan Production" class="about-img-1">
+      <div class="services-header-grid scroll-animated">
+        <div>
+          <span class="section-tag">What We Serve</span>
+          <h2 class="section-title">What We Serve To Plan <br>Your <span class="accent-text font-italic">Best Wedding</span></h2>
+        </div>
+        <p class="section-desc">From candid lenses to high-definition cinematography rigs, we customize our production gear, style, and post-production coloring to match your unique story.</p>
+      </div>
+      
+      <div class="services-grid-4">
+        <!-- Service 1 -->
+        <div class="service-grid-card scroll-animated">
+          <div class="icon-box">
+            <!-- Camera Outline -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="28" height="28">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z" />
+            </svg>
           </div>
-          <div class="img-frame-sm">
-            <img src="images/portrait.png" alt="High fashion creative studio portrait" class="about-img-2">
+          <h3>Wedding Photography</h3>
+          <p>A blend of emotional candid captures and grand traditional portraits, shot using high-end full-frame lenses to bring out every detail.</p>
+          <a href="#portfolio" class="details-link">More Details <span>→</span></a>
+        </div>
+        
+        <!-- Service 2 -->
+        <div class="service-grid-card scroll-animated">
+          <div class="icon-box">
+            <!-- Movie Camera Outline -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="28" height="28">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
+            </svg>
+          </div>
+          <h3>Cinematography</h3>
+          <p>Cinematic wedding trailers, highlight reels, and feature-length documentary films featuring gimbals, sliders, and drone footage.</p>
+          <a href="#portfolio" class="details-link">More Details <span>→</span></a>
+        </div>
+        
+        <!-- Service 3 -->
+        <div class="service-grid-card scroll-animated">
+          <div class="icon-box">
+            <!-- Heart Outline -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="28" height="28">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+            </svg>
+          </div>
+          <h3>Pre-Wedding Shoots</h3>
+          <p>Scenic, story-driven portrait sessions in Gwalior's royal heritage locations or customized destination backdrops across India.</p>
+          <a href="#portfolio" class="details-link">More Details <span>→</span></a>
+        </div>
+        
+        <!-- Service 4 -->
+        <div class="service-grid-card scroll-animated">
+          <div class="icon-box">
+            <!-- Photo Frame Outline -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="28" height="28">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+            </svg>
+          </div>
+          <h3>Studio Portraits</h3>
+          <p>Elegant high-fashion portraits, creative lighting direction, and lifestyle portfolios shot directly at our Hazira studio space.</p>
+          <a href="#portfolio" class="details-link">More Details <span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase Section -->
+  <section id="showcase" class="about-section">
+    <div class="container showcase-grid">
+      <div class="showcase-collage scroll-animated">
+        <div class="showcase-collage-frame-1 img-frame-accent">
+          <img src="images/wedding.png" alt="Traditional Indian couple wedding portrait frame by Kanchan Production">
+        </div>
+        <div class="showcase-collage-frame-2">
+          <img src="images/hero.png" alt="Pre-wedding romance frame by Kanchan Production">
+        </div>
+      </div>
+      
+      <div class="showcase-content scroll-animated">
+        <span class="section-tag">Our Philosophy</span>
+        <h2 class="section-title">Dedicated To Join Your <br>Journey For the <span class="accent-text font-italic">Best Wedding</span></h2>
+        <p>Every laugh, every tear, and every royal detail is captured with precision. We ensure that the visual memory of your celebration is as spectacular as the day itself, combining modern visual tools with standard lighting and compositional rules.</p>
+        
+        <div class="showcase-stats-row">
+          <div class="showcase-stat-card">
+            <span class="val">350+</span>
+            <span class="lbl">Tours & Shoots</span>
+          </div>
+          <div class="showcase-stat-card">
+            <span class="val">150+</span>
+            <span class="lbl">Happy Couples</span>
+          </div>
+          <div class="showcase-stat-card">
+            <span class="val">250+</span>
+            <span class="lbl">Grand Events</span>
           </div>
         </div>
-        <div class="about-content scroll-animated">
-          <span class="section-tag">OUR STORY</span>
-          <h2 class="section-title">Three Decades of Visual Artistry</h2>
-          <p class="p-highlight">Kanchan Production believes that every wedding and event is an unrepeatable masterpiece. Led by Manoj Verma, our mission is to capture raw emotions, fleeting smiles, and royal celebrations so they remain preserved for generations.</p>
-          <p>Located in Hazira, Gwalior, we are a professional collective of wedding photographers, cinematographers, and post-production specialists under the creative direction of Manoj Verma. Combining classical portrait techniques with contemporary cinematic storytelling, we turn your big day into an heirloom film.</p>
-          <p class="about-quote font-serif italic">"We don't just photograph subjects. We photograph how they feel."</p>
+        
+        <div>
+          <a href="#contact" class="btn-pill">
+            Get A Quote
+            <span class="btn-arrow">→</span>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Portfolio / Gallery Section -->
-  <section id="portfolio" class="portfolio-section">
+  <section id="portfolio" class="section-white">
     <div class="container">
-      <div class="section-header text-center scroll-animated">
-        <span class="section-tag">SELECTED WORKS</span>
-        <h2 class="section-title">Our Signature Frames</h2>
+      <div class="text-center scroll-animated">
+        <span class="section-tag">Selected Works</span>
+        <h2 class="section-title">Our Recent Work Gallery</h2>
         
         <!-- Filter Controls -->
         <div class="portfolio-filters" id="portfolio-filters">
@@ -131,133 +260,87 @@
       </div>
       
       <!-- Portfolio Grid -->
-      <div class="portfolio-grid" id="portfolio-grid">
+      <div class="portfolio-grid-masonry" id="portfolio-grid">
         <!-- Item 1 -->
-        <div class="portfolio-item scroll-animated" data-category="wedding">
-          <div class="portfolio-img-container">
+        <div class="portfolio-card scroll-animated" data-category="wedding">
+          <div class="portfolio-img-box">
             <img src="images/wedding.png" alt="Candid wedding portrait of Indian bride and groom laughing">
           </div>
-          <div class="portfolio-overlay">
-            <div class="portfolio-info">
-              <span class="project-cat">WEDDING CANDID</span>
-              <h4>The Golden Hour Smile</h4>
-            </div>
+          <div class="portfolio-details">
+            <span class="cat">Wedding Candid</span>
+            <h4>The Golden Hour Smile</h4>
           </div>
         </div>
         
         <!-- Item 2 -->
-        <div class="portfolio-item scroll-animated" data-category="pre-wedding">
-          <div class="portfolio-img-container">
-            <img src="images/pre_wedding.png" alt="Pre-wedding shoot of couple holding hands near Gwalior Fort monument">
+        <div class="portfolio-card scroll-animated" data-category="pre-wedding">
+          <div class="portfolio-img-box">
+            <img src="images/pre_wedding.png" alt="Pre-wedding shoot of couple near Gwalior Fort monument">
           </div>
-          <div class="portfolio-overlay">
-            <div class="portfolio-info">
-              <span class="project-cat">PRE-WEDDING CINEMA</span>
-              <h4>Elegance in Gwalior Fort</h4>
-            </div>
+          <div class="portfolio-details">
+            <span class="cat">Pre-Wedding Cinema</span>
+            <h4>Elegance in Gwalior Fort</h4>
           </div>
         </div>
         
         <!-- Item 3 -->
-        <div class="portfolio-item scroll-animated" data-category="portrait">
-          <div class="portfolio-img-container">
-            <img src="images/portrait.png" alt="Creative high contrast fashion studio portrait of a woman">
+        <div class="portfolio-card scroll-animated" data-category="portrait">
+          <div class="portfolio-img-box">
+            <img src="images/portrait.png" alt="Creative high contrast fashion studio portrait">
           </div>
-          <div class="portfolio-overlay">
-            <div class="portfolio-info">
-              <span class="project-cat">CREATIVE PORTRAIT</span>
-              <h4>Shadows & Light</h4>
-            </div>
+          <div class="portfolio-details">
+            <span class="cat">Creative Portrait</span>
+            <h4>Shadows & Light</h4>
           </div>
         </div>
         
         <!-- Item 4 -->
-        <div class="portfolio-item scroll-animated" data-category="pre-wedding">
-          <div class="portfolio-img-container">
-            <img src="images/hero.png" alt="Pre-wedding romantic silhouette of couple at sunset overlooking water">
+        <div class="portfolio-card scroll-animated" data-category="pre-wedding">
+          <div class="portfolio-img-box">
+            <img src="images/hero.png" alt="Pre-wedding romantic silhouette of couple at sunset">
           </div>
-          <div class="portfolio-overlay">
-            <div class="portfolio-info">
-              <span class="project-cat">CINEMATIC SILHOUETTE</span>
-              <h4>Sunset Love Story</h4>
-            </div>
+          <div class="portfolio-details">
+            <span class="cat">Cinematic Silhouette</span>
+            <h4>Sunset Love Story</h4>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="services-section">
-    <div class="container">
-      <div class="section-header text-center scroll-animated">
-        <span class="section-tag">OUR EXPERTISE</span>
-        <h2 class="section-title">Bespoke Production Services</h2>
-        <p class="section-subtitle">From candid lenses to high-definition cinematography rigs, we customize our production gear and style to match your vision.</p>
-      </div>
-      
-      <div class="grid grid-3">
-        <!-- Service 1 -->
-        <div class="service-card scroll-animated">
-          <div class="service-icon">💍</div>
-          <h3>Wedding Photography</h3>
-          <p>A blend of emotional candid captures and grand traditional portraits, shot using high-end full-frame lenses to bring out every detail.</p>
-        </div>
-        
-        <!-- Service 2 -->
-        <div class="service-card scroll-animated">
-          <div class="service-icon">🎥</div>
-          <h3>Cinematography & Films</h3>
-          <p>Cinematic high-definition wedding trailers, highlight reels, and feature-length documentary films featuring dollys, gimbals, and drone footage.</p>
-        </div>
-        
-        <!-- Service 3 -->
-        <div class="service-card scroll-animated">
-          <div class="service-icon">✨</div>
-          <h3>Pre-Wedding Shoots</h3>
-          <p>Scenic, story-driven portrait sessions in Gwalior's royal heritage locations or customized destination backdrops across India.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Reviews Section -->
-  <section id="testimonials" class="testimonials-section">
-    <div class="container">
-      <div class="section-header text-center scroll-animated">
-        <span class="section-tag">TESTIMONIALS</span>
-        <h2 class="section-title">Client Love Stories</h2>
-        <p class="section-subtitle">Read feedback from couples who trusted us to preserve their most cherished life chapters.</p>
+  <section id="testimonials" class="about-section">
+    <div class="container testimonials-grid">
+      <div class="testimonials-left-card scroll-animated">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">Client Reviews <br>To Our <span class="accent-text font-italic">Service</span></h2>
+        <p>Read feedback from couples who trusted us to preserve their most cherished life chapters in Gwalior and across Madhya Pradesh.</p>
+        
+        <div class="hero-rating-badge" style="position: static; margin-top: 2rem;">
+          <div class="stars" style="font-size: 1.1rem;">★★★★★</div>
+          <div class="score" style="font-size: 2.5rem; margin: 0.2rem 0;">4.7 / 5</div>
+          <div class="label">Based on 100+ Verified Clients</div>
+        </div>
       </div>
       
-      <div class="testimonials-grid">
+      <div class="testimonials-list scroll-animated">
         <!-- Testimonial 1 -->
-        <div class="testimonial-card scroll-animated">
+        <div class="testimonial-item-card">
           <div class="stars">★★★★★</div>
-          <p class="testimonial-text">"Kanchan Production captured our wedding in Hazira. The candid shots and the wedding film are incredibly beautiful! They captured all our emotions without making us pose artificially."</p>
-          <div class="client-meta">
+          <p>"Kanchan Production captured our wedding in Hazira. The candid shots and the wedding film are incredibly beautiful! They captured all our emotions without making us pose artificially."</p>
+          <div class="testimonial-meta">
             <strong>Raghav & Kriti</strong>
-            <span>Gwalior Wedding</span>
+            <span>Gwalior Wedding Client</span>
           </div>
         </div>
         
         <!-- Testimonial 2 -->
-        <div class="testimonial-card scroll-animated">
+        <div class="testimonial-item-card">
           <div class="stars">★★★★★</div>
-          <p class="testimonial-text">"The absolute best pre-wedding shoot experience in Gwalior. The team guided us on poses, picked beautiful spots near Gwalior Fort, and the sunset shots are breathtaking. Extremely professional!"</p>
-          <div class="client-meta">
+          <p>"The absolute best pre-wedding shoot experience in Gwalior. The team guided us on poses, picked beautiful spots near Gwalior Fort, and the sunset shots are breathtaking. Extremely professional!"</p>
+          <div class="testimonial-meta">
             <strong>Sneha Sharma</strong>
             <span>Pre-Wedding Client</span>
-          </div>
-        </div>
-        
-        <!-- Testimonial 3 -->
-        <div class="testimonial-card scroll-animated">
-          <div class="stars">★★★★★</div>
-          <p class="testimonial-text">"Their cinematography is on another level. The highlight trailer felt like a Netflix movie. The lighting in the studio portraits is spectacular. Capturing memories since 1996 for a reason!"</p>
-          <div class="client-meta">
-            <strong>Abhishek Jain</strong>
-            <span>Event & Studio Client</span>
           </div>
         </div>
       </div>
@@ -265,85 +348,134 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <div class="grid grid-2">
-        <div class="contact-info scroll-animated">
-          <span class="section-tag">BOOK A SESSION</span>
-          <h2 class="section-title">Let's Create Magic Together</h2>
-          <p>Planning an upcoming wedding, pre-wedding shoot, or corporate event in Gwalior? Fill out the form to check availability and book a personal catalog review at our studio.</p>
+  <section id="contact" class="section-white">
+    <div class="container contact-grid">
+      <div class="contact-info-panel scroll-animated">
+        <span class="section-tag">Book A Session</span>
+        <h2 class="section-title">Book For An <br><span class="accent-text font-italic">Appointment</span></h2>
+        <p>Planning an upcoming wedding, pre-wedding shoot, or corporate event in Gwalior? Fill out the form to check availability and book a personal catalog review at our studio.</p>
+        
+        <ul class="benefits-checklist">
+          <li>Free pre-shoot storyboard consultation</li>
+          <li>High-definition files & cinematic highlight trailer</li>
+          <li>Experienced crew under Manoj Verma's creative direction</li>
+          <li>Bespoke packaging and album delivery within 45 days</li>
+        </ul>
+        
+        <div class="contact-details-row">
+          <div class="contact-detail-block">
+            <span class="icon">📍</span>
+            <div>
+              <strong>Our Studio</strong>
+              <p>In front of Kabir Park, Tansen Road, Hazira, Gwalior - 474003, Madhya Pradesh</p>
+            </div>
+          </div>
           
-          <div class="contact-details">
-            <div class="detail-item">
-              <span class="detail-icon">📍</span>
-              <div>
-                <strong>Our Studio</strong>
-                <p>In front of Kabir Park, Tansen Road, Hazira, Gwalior - 474003, Madhya Pradesh</p>
-              </div>
-            </div>
-            
-            <div class="detail-item">
-              <span class="detail-icon">📞</span>
-              <div>
-                <strong>Direct Call</strong>
-                <p><a href="tel:+917803950222" class="contact-link">+91 78039 50222</a></p>
-              </div>
-            </div>
-            
-            <div class="detail-item">
-              <span class="detail-icon">🕒</span>
-              <div>
-                <strong>Studio Hours</strong>
-                <p>Monday - Sunday: 10:30 AM - 9:00 PM</p>
-              </div>
+          <div class="contact-detail-block">
+            <span class="icon">📞</span>
+            <div>
+              <strong>Direct Call</strong>
+              <p><a href="tel:+917803950222">+91 78039 50222</a></p>
             </div>
           </div>
         </div>
-        
-        <!-- Contact Form Container -->
-        <div class="contact-form-container scroll-animated">
-          <form id="contact-form" class="contact-form">
-            <h3 class="form-title">Consultation Request</h3>
-            
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" required placeholder="Enter your full name">
-            </div>
-            
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" required placeholder="Enter your mobile number">
-            </div>
-            
-            <div class="form-group">
-              <label for="service">Interested Service</label>
-              <select id="service">
-                <option value="wedding">Wedding Candid Photography</option>
-                <option value="cinematography">Cinematic Wedding Film</option>
-                <option value="prewedding">Pre-Wedding Photoshoot</option>
-                <option value="studio">Studio Portraits / Other Events</option>
-              </select>
-            </div>
-            
-            <div class="form-group">
-              <label for="message">Event Date & Details</label>
-              <textarea id="message" rows="4" placeholder="Mention tentative dates, venue in Gwalior/outside, or styling preferences..."></textarea>
-            </div>
-            
-            <button type="submit" class="btn btn-primary btn-block">Send Request</button>
-            <div id="form-message" class="form-message"></div>
-          </form>
-        </div>
+      </div>
+      
+      <!-- Contact Form Container -->
+      <div class="contact-form-card scroll-animated">
+        <form id="contact-form">
+          <h3>Consultation Request</h3>
+          
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required placeholder="Enter your full name">
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required placeholder="Enter your mobile number">
+          </div>
+          
+          <div class="form-group">
+            <label for="service">Interested Service</label>
+            <select id="service">
+              <option value="wedding">Wedding Candid Photography</option>
+              <option value="cinematography">Cinematic Wedding Film</option>
+              <option value="prewedding">Pre-Wedding Photoshoot</option>
+              <option value="studio">Studio Portraits / Other Events</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Event Date & Details</label>
+            <textarea id="message" rows="4" placeholder="Mention tentative dates, venue, or styling preferences..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn-pill btn-block">
+            Send Request
+            <span class="btn-arrow">→</span>
+          </button>
+          <div id="form-message" class="form-message"></div>
+        </form>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="site-footer">
-    <div class="container footer-content text-center">
-      <p class="footer-logo font-serif italic">Kanchan Production</p>
-      <p>&copy; 2026 Kanchan Production. All Rights Reserved.</p>
-      <p class="footer-demo-badge">Demo Website created by website development agency</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <a href="#hero">
+              <span class="logo-main">KANCHAN</span>
+              <span class="logo-sub">PRODUCTION</span>
+            </a>
+          </div>
+          <p>Luxury wedding photography and cinematography studio based in Gwalior. Capturing love and framing timeless moments since 1996 under the direction of Manoj Verma.</p>
+          <div class="footer-social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.163c-.272-1.016-1.071-1.815-2.087-2.087C19.565 3.53 12 3.53 12 3.53s-7.564 0-9.411.546c-1.017.272-1.816 1.071-2.088 2.087C0 8.01 0 12 0 12s0 3.99.501 5.837c.272 1.016 1.071 1.815 2.088 2.087C4.436 20.47 12 20.47 12 20.47s7.565 0 9.412-.546c1.016-.272 1.815-1.071 2.087-2.087C24 15.99 24 12 24 12s0-3.99-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Gallery</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-map-col">
+          <h4>Studio Location</h4>
+          <div class="footer-map-container">
+            <!-- Google Map Coordinates for Kabir Park, Tansen Road, Hazira, Gwalior -->
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.5218770281696!2d78.1837699!3d26.2447954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c6c7b6400001%3A0xc3cfad1401340158!2sKabir%20Park!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Kanchan Production. All Rights Reserved.</p>
+        <p class="footer-demo-badge">Demo Website created by website development agency</p>
+      </div>
     </div>
   </footer>
 
@@ -354,6 +486,7 @@
     </svg>
   </a>
 
+  <!-- Script triggers -->
   <script src="app.js"></script>
 </body>
 </html>
