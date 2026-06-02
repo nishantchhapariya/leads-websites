@@ -45,6 +45,7 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   background-color: var(--bg);
+  color: var(--text);
 }
 
 a {
@@ -1324,7 +1325,7 @@ section {
     .scroll-animated {
       animation: fade-rise auto linear both;
       animation-timeline: view();
-      animation-range: entry 10% cover 40%;
+      animation-range: entry 5% entry 80%;
     }
   }
 }
