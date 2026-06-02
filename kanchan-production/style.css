@@ -10,7 +10,8 @@
   --border-active: rgba(223, 186, 107, 0.3);
   --glass: rgba(255, 255, 255, 0.03);
   --font-sans: 'Outfit', sans-serif;
-  --font-serif: 'Playfair Display', serif;
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-logo: 'Cinzel', serif;
   --transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   --border-radius: 4px;
 }
@@ -130,18 +131,21 @@ img {
 }
 
 .logo-main {
-  font-size: 1.3rem;
-  letter-spacing: 0.15em;
-  font-weight: 700;
+  font-family: var(--font-logo);
+  font-size: 1.45rem;
+  letter-spacing: 0.22em;
+  font-weight: 500;
   line-height: 1.1;
   color: var(--text);
 }
 
 .logo-sub {
-  font-size: 0.65rem;
-  letter-spacing: 0.35em;
+  font-family: var(--font-sans);
+  font-size: 0.58rem;
+  letter-spacing: 0.42em;
   color: var(--accent);
   font-weight: 500;
+  margin-top: 0.1rem;
 }
 
 .nav-menu ul {
@@ -847,9 +851,12 @@ img {
 }
 
 .footer-logo {
-  font-size: 1.6rem;
+  font-family: var(--font-logo);
+  font-size: 1.8rem;
   color: var(--accent);
   margin-bottom: 1rem;
+  letter-spacing: 0.18em;
+  font-weight: 500;
 }
 
 .footer-demo-badge {
