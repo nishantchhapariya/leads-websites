@@ -17,9 +17,9 @@
   --border-accent: rgba(217, 136, 92, 0.2); /* Soft terracotta accent border */
   --shadow: 0 10px 30px rgba(96, 91, 86, 0.05); /* Subtle luxurious card shadow */
   --shadow-hover: 0 20px 40px rgba(96, 91, 86, 0.1);
-  --font-sans: 'Outfit', sans-serif;
+  --font-sans: 'Questrial', sans-serif;
   --font-serif: 'Cormorant Garamond', serif;
-  --font-logo: 'Cinzel', serif;
+  --font-logo: 'Tenor Sans', sans-serif;
   --transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   --border-radius: 4px;
 }
@@ -33,19 +33,20 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 18px; /* Slightly larger base font size for Cormorant Garamond */
   background-color: var(--bg);
   color: var(--text);
-  font-family: var(--font-sans);
+  font-family: var(--font-serif); /* Cormorant Garamond is the default text font */
   overflow-x: hidden;
 }
 
 body {
-  line-height: 1.6;
+  line-height: 1.75;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   background-color: var(--bg);
   color: var(--text);
+  font-family: var(--font-serif);
 }
 
 a {
@@ -98,6 +99,7 @@ img {
   margin-bottom: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
+  font-family: var(--font-sans); /* Questrial */
 }
 
 .section-tag::before {
@@ -106,7 +108,7 @@ img {
 }
 
 .section-title {
-  font-family: var(--font-serif);
+  font-family: var(--font-logo); /* Tenor Sans */
   font-size: clamp(2.2rem, 4vw, 3.5rem);
   line-height: 1.2;
   margin-bottom: 1.2rem;
@@ -189,6 +191,7 @@ img {
 }
 
 .nav-menu a {
+  font-family: var(--font-sans); /* Questrial */
   font-size: 0.9rem;
   letter-spacing: 0.05em;
   color: var(--text-muted);
@@ -388,7 +391,7 @@ section {
 }
 
 .hero-content .main-title {
-  font-family: var(--font-serif);
+  font-family: var(--font-logo); /* Tenor Sans */
   font-size: clamp(2.8rem, 5.5vw, 4.5rem);
   line-height: 1.15;
   margin-bottom: 1.5rem;
