@@ -1109,6 +1109,28 @@ section {
   transition: var(--transition);
 }
 
+/* Explicit high-contrast placeholder text */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--text-muted);
+  opacity: 0.75;
+}
+
+/* Force light background and dark text for select dropdown options */
+.form-group select option {
+  background-color: var(--bg-sec);
+  color: var(--text);
+}
+
+/* Autofill color overrides to prevent browsers from setting low-contrast backgrounds/text */
+.form-group input:-webkit-autofill,
+.form-group textarea:-webkit-autofill,
+.form-group select:-webkit-autofill {
+  -webkit-text-fill-color: var(--text) !important;
+  -webkit-box-shadow: 0 0 0px 1000px var(--bg-card) inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
