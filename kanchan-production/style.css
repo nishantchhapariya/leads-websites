@@ -1349,7 +1349,7 @@ section {
 @media (max-width: 992px) {
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: 3.5rem;
+    gap: 3rem;
   }
   
   .hero-content {
@@ -1369,6 +1369,7 @@ section {
   .hero-image-wrapper {
     max-width: 480px;
     margin: 0 auto;
+    padding-right: 15px; /* Account for geometric frame outline offset */
   }
   
   .about-grid,
@@ -1381,8 +1382,8 @@ section {
   
   .about-images-collage,
   .showcase-collage {
-    max-width: 500px;
-    height: 420px;
+    max-width: 440px;
+    height: 380px;
     margin: 0 auto;
   }
   
@@ -1400,7 +1401,7 @@ section {
   .nav-menu {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: -300px; /* Safe bounds instead of -100% to prevent horizontal scroll wobbling */
     width: 280px;
     height: 100vh;
     background-color: var(--bg-sec);
@@ -1446,14 +1447,44 @@ section {
 
 @media (max-width: 768px) {
   section {
-    padding: 5rem 0;
+    padding: 4.5rem 0;
+  }
+  
+  .hero-content .main-title {
+    font-size: clamp(2rem, 7.5vw, 2.8rem); /* Scale down title size for mobile */
+  }
+
+  .hero-rating-badge {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin: 1.5rem auto 0;
+    width: max-content;
+    text-align: center;
   }
   
   .about-content-card,
-  .contact-form-card {
+  .contact-form-card,
+  .testimonials-left-card,
+  .testimonial-item-card {
     padding: 2.5rem 1.8rem;
   }
+
+  .about-images-collage,
+  .showcase-collage {
+    max-width: 360px;
+    height: 300px;
+  }
   
+  .service-grid-card {
+    padding: 2.2rem 1.5rem;
+  }
+
+  .portfolio-grid-masonry {
+    grid-template-columns: 1fr; /* Stack portfolio items cleanly on tablet/mobile */
+    gap: 1.8rem;
+  }
+
   .showcase-stats-row {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -1462,5 +1493,23 @@ section {
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image-wrapper {
+    max-width: 100%;
+    padding-right: 8px;
+  }
+
+  .img-frame-accent::after {
+    top: 8px;
+    left: 8px;
+  }
+
+  .about-images-collage,
+  .showcase-collage {
+    max-width: 100%;
+    height: 260px;
   }
 }
