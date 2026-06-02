@@ -529,7 +529,7 @@ section {
   display: grid;
   grid-template-columns: 0.95fr 1.05fr;
   gap: 5rem;
-  align-items: center;
+  align-items: start; /* align-items: start lets collage grow without stretching */
 }
 
 .about-content-card {
@@ -563,6 +563,8 @@ section {
 .about-images-collage {
   position: relative;
   height: 520px;
+  /* min-width guard prevents collage images from collapsing to near-zero */
+  min-width: 0;
 }
 
 .about-collage-back {
@@ -649,7 +651,7 @@ section {
 .service-grid-card {
   background-color: var(--bg-card);
   border: 1px solid var(--border);
-  padding: 3rem 2.2rem;
+  padding: 2.5rem 2rem;
   border-radius: 8px;
   transition: var(--transition);
   display: flex;
@@ -1390,13 +1392,21 @@ section {
   .testimonials-grid,
   .contact-grid {
     grid-template-columns: 1fr;
-    gap: 4rem;
+    gap: 3rem;
+  }
+  
+  /* Show collage below the text card on mobile */
+  .about-grid .about-content-card {
+    order: 1;
+  }
+  .about-grid .about-images-collage {
+    order: 2;
   }
   
   .about-images-collage,
   .showcase-collage {
     max-width: 440px;
-    height: 380px;
+    height: 340px;
     margin: 0 auto;
   }
   
@@ -1489,12 +1499,12 @@ section {
 
   .about-images-collage,
   .showcase-collage {
-    max-width: 360px;
+    max-width: 100%;
     height: 300px;
   }
   
   .service-grid-card {
-    padding: 2.2rem 1.5rem;
+    padding: 1.8rem 1.5rem;
   }
 
   .portfolio-grid-masonry {
@@ -1527,6 +1537,17 @@ section {
   .about-images-collage,
   .showcase-collage {
     max-width: 100%;
-    height: 260px;
+    height: 240px;
+  }
+  
+  /* On very small phones make service header stack tighter */
+  .services-header-grid {
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  /* Reduce collage indicators spacing */
+  .about-collage-indicators {
+    bottom: -30px;
   }
 }
